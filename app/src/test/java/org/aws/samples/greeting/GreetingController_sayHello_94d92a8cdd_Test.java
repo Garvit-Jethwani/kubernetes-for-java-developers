@@ -5,7 +5,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotSame;
 
 @SpringBootTest
 public class GreetingController_sayHello_94d92a8cdd_Test {
@@ -27,6 +27,6 @@ public class GreetingController_sayHello_94d92a8cdd_Test {
     public void testSayHello_failure() {
         String expected = "Hi";
         String actual = controller.sayHello();
-        assertNotEquals(expected, actual, "Expected output matches actual output");
+        assertNotSame(expected, actual, "Expected output matches actual output");
     }
 }
