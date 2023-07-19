@@ -27,6 +27,6 @@ public class GreetingController_sayHello_94d92a8cdd_Test {
     public void testSayHello_failure() {
         String expected = "Hi";
         String actual = controller.sayHello();
-        assertNotEquals(expected, actual, "Expected output matches actual output, but it shouldn't");
+        assertNotEquals(expected, actual);
     }
 }
